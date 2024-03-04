@@ -1,7 +1,7 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const title = document.querySelector('input[name="post-title"]').value;
+  const title = document.querySelector('input[name="post-title"]').value.toString();
   const post_content = document.querySelector('textarea[name="post-content"]').value.trim();
 
   const response = await fetch(`/api/posts`, {
@@ -18,7 +18,7 @@ async function newFormHandler(event) {
   if (response.ok) {
       document.location.replace('/dashboard');
   } else {
-      alert(response.statusText);
+      alert(response.statusText + ': Enter Title as Number');
   }
 }
 

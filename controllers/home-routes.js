@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
                 plain: true
             }));
 
-            res.render('homepage', {
+            res.render('homepage.handlebars', {
                 posts,
                 loggedIn: req.session.loggedIn
             });
@@ -82,7 +82,7 @@ router.get('/post/:id', (req, res) => {
                 plain: true
             });
 
-            res.render('single-post', {
+            res.render('single-post.handlebars', {
                 post,
                 loggedIn: req.session.loggedIn
             });
@@ -108,7 +108,7 @@ router.get('/signup', (req, res) => {
         return;
     }
 
-    res.render('signup');
+    res.render('signup.handlebars');
 });
 
 
