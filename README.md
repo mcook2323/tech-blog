@@ -13,9 +13,7 @@ The Tech Blog is a platform where developers can publish their blog posts and in
 - [Usage](#usage)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Questions](#questions)
+
 
 ## Installation
 
